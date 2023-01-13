@@ -1,11 +1,9 @@
 from reader import Reader
 
-PATH = 'books/gpt3/gpt3.pdf'
-
 def __main__(*args, **kwargs):
-    reader = Reader(PATH)
-    for page in range(10, 20):
-            print(reader.get())
+    reader = Reader('books/book/book.pdf')
+    for page in range(reader.num_pages):
+            print(reader.get(page))
 
 if __name__ == '__main__':
 		__main__()
