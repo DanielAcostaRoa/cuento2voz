@@ -1,2 +1,4 @@
 *.mp3
 arena.pdf
+/books/**
+__pycache__/**
